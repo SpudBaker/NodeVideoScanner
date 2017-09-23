@@ -19,21 +19,7 @@ app.get('/', (request, response) => {
   response.render('index');
 });
 
-app.get('/auth/login/:password', (request, response) => {
-
-  var sQuery = 'SELECT * FROM employee WHERE password = ?'
-  var params = [request.params.password];
-
-  pool.query(sQuery, params, (err, rows) => {
-
-    if (err) throw err;
-
-    // password has a unique index on the database;
-
-    var JSONdata = JSON.stringify(rows);
-    response.end(JSONdata);
-  });
-});
+require('./lib/rest-auth-login.js')(pool, app);
 
 app.listen(app.get('port'), () => {
   console.log('Node app is running on port', app.get('port'));
