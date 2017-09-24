@@ -11,6 +11,10 @@ var pool = mySql.createPool({
   database : 'q1uc6zz7ywr1i8n8'
 });
 
+function getDate() {
+  return new Date().toISOString().slice(0, 19).replace('T', ' ');
+}
+
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
@@ -19,7 +23,7 @@ app.get('/', (request, response) => {
   response.render('index');
 });
 
-require('./lib/rest-auth-login.js')(pool, app);
+require('./lib/rest-auth-login.js')(pool, app, getDate);
 
 app.listen(app.get('port'), () => {
   console.log('Node app is running on port', app.get('port'));
