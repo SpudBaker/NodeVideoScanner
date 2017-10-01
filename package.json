@@ -10,7 +10,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "4.15.2"
+    "express": "4.15.2",
+    "mysql": "2.14.1"
   },
   "devDependencies": {
     "eslint": "^4.6.1"
