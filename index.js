@@ -4,6 +4,7 @@ var express = require('express');
 var app = express();
 var mySql = require('mysql');
 var helper = require('./lib/helperFunctions.js');
+var cors = require('cors');
 var pool = mySql.createPool({
   connectionLimit : 5,
   host : 'ysp9sse09kl0tzxj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
@@ -14,6 +15,9 @@ var pool = mySql.createPool({
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
+
+// use it before all route definitions
+app.use(cors({origin: '*'}));
 
 app.get('/', (request, response) => {
   response.render('index');

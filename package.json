@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "express": "4.15.2",
-    "mysql": "2.14.1"
+    "mysql": "2.14.1",
+    "cors": "2.8.4"
   },
   "devDependencies": {
     "eslint": "^4.6.1"
