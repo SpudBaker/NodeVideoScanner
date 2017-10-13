@@ -17,7 +17,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
 // use it before all route definitions
-app.use(cors({origin: '*'}));
+app.use(cors({origin: 'http://localhost:4200'}));
 
 app.get('/', (request, response) => {
   response.render('index');
