@@ -24,6 +24,7 @@ app.get('/', (request, response) => {
 });
 
 require('./lib/rest-auth-login.js')(pool, app, helper);
+require('./lib/rest-auth-validate-key.js')(pool, app, helper);
 
 app.listen(app.get('port'), () => {
   console.log('Node app is running on port', app.get('port'));
