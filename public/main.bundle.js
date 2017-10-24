@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 142:
+/***/ 144:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -9,20 +9,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 142;
+webpackEmptyContext.id = 144;
 
 
 /***/ }),
 
-/***/ 143:
+/***/ 145:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(162);
 
 
 
@@ -35,7 +35,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 147:
+/***/ 149:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65,7 +65,34 @@ GeneralUtilitiesService = __decorate([
 
 /***/ }),
 
-/***/ 148:
+/***/ 15:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(78);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(92)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js??ref--9-2!../node_modules/postcss-loader/index.js??postcss!./styles.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js??ref--9-2!../node_modules/postcss-loader/index.js??postcss!./styles.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 150:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73,7 +100,7 @@ GeneralUtilitiesService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styles_css__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_styles_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SESVideoScanner_service__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__GeneralUtilities_service__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__GeneralUtilities_service__ = __webpack_require__(149);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -103,8 +130,8 @@ var AppComponent = (function () {
 }());
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'my-app',
-        template: __webpack_require__(214),
+        selector: 'app-component',
+        template: __webpack_require__(216),
         providers: [__WEBPACK_IMPORTED_MODULE_2__SESVideoScanner_service__["a" /* SESVideoScannerService */], __WEBPACK_IMPORTED_MODULE_3__GeneralUtilities_service__["a" /* GeneralUtilitiesService */]]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__GeneralUtilities_service__["a" /* GeneralUtilitiesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__GeneralUtilities_service__["a" /* GeneralUtilitiesService */]) === "function" && _b || Object])
@@ -115,24 +142,24 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 149:
+/***/ 151:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__selectVideoFiles_components_selectVideoFiles_component__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__defineVideoSizeAndStartPoint_components_defineVideoSizeAndStartPoint_component__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__defineScanArea_components_defineScanArea_component__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__doScan_components_doScan_component__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__showResults_components_showResults_component__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__header_components_header_component__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__settings_components_settings_component__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__settings_components_settingsForm_component__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__selectVideoFiles_components_selectVideoFiles_component__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__defineVideoSizeAndStartPoint_components_defineVideoSizeAndStartPoint_component__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__defineScanArea_components_defineScanArea_component__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__doScan_components_doScan_component__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__showResults_components_showResults_component__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__header_components_header_component__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__settings_components_settings_component__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__settings_components_settingsForm_component__ = __webpack_require__(160);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -169,11 +196,11 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* JsonpModule */],
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot([
                 { path: '', component: __WEBPACK_IMPORTED_MODULE_6__selectVideoFiles_components_selectVideoFiles_component__["a" /* SelectVideoFilesComponent */] },
-                { path: 'my-define-video-size-and-start-point', component: __WEBPACK_IMPORTED_MODULE_7__defineVideoSizeAndStartPoint_components_defineVideoSizeAndStartPoint_component__["a" /* DefineVideoSizeAndStartPointComponent */] },
-                { path: 'my-define-scan-area', component: __WEBPACK_IMPORTED_MODULE_8__defineScanArea_components_defineScanArea_component__["a" /* DefineScanAreaComponent */] },
-                { path: 'my-do-scan', component: __WEBPACK_IMPORTED_MODULE_9__doScan_components_doScan_component__["a" /* DoScanComponent */] },
-                { path: 'my-show-results', component: __WEBPACK_IMPORTED_MODULE_10__showResults_components_showResults_component__["a" /* ShowResultsComponent */] },
-                { path: 'my-settings', component: __WEBPACK_IMPORTED_MODULE_12__settings_components_settings_component__["a" /* SettingsComponent */] }
+                { path: 'app-define-video-size-and-start-point', component: __WEBPACK_IMPORTED_MODULE_7__defineVideoSizeAndStartPoint_components_defineVideoSizeAndStartPoint_component__["a" /* DefineVideoSizeAndStartPointComponent */] },
+                { path: 'app-define-scan-area', component: __WEBPACK_IMPORTED_MODULE_8__defineScanArea_components_defineScanArea_component__["a" /* DefineScanAreaComponent */] },
+                { path: 'app-do-scan', component: __WEBPACK_IMPORTED_MODULE_9__doScan_components_doScan_component__["a" /* DoScanComponent */] },
+                { path: 'app-show-results', component: __WEBPACK_IMPORTED_MODULE_10__showResults_components_showResults_component__["a" /* ShowResultsComponent */] },
+                { path: 'app-settings', component: __WEBPACK_IMPORTED_MODULE_12__settings_components_settings_component__["a" /* SettingsComponent */] }
             ])
         ],
         declarations: [
@@ -195,34 +222,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 15:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(77);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(91)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js??ref--9-2!../node_modules/postcss-loader/index.js??postcss!./styles.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js??ref--9-2!../node_modules/postcss-loader/index.js??postcss!./styles.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 150:
+/***/ 152:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -325,7 +325,7 @@ var DefineScanAreaComponent = (function () {
         this.sesVideoScannerService.scanAreaDisplayLeft = this.scanAreaDisplayLeft;
         this.sesVideoScannerService.scanAreaDisplayWidth = this.scanAreaDisplayWidth + 10; // to allow for border
         this.sesVideoScannerService.scanAreaDisplayHeight = this.scanAreaDisplayHeight + 10; // to allow for border
-        this.router.navigate(['/my-do-scan']);
+        this.router.navigate(['/app-do-scan']);
     };
     DefineScanAreaComponent.prototype.positionResizeHandle = function () {
         this.resizeHandleLeft = this.scanAreaDisplayLeft + this.scanAreaDisplayWidth;
@@ -353,8 +353,8 @@ __decorate([
 ], DefineScanAreaComponent.prototype, "imgElement", void 0);
 DefineScanAreaComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'my-define-scan-area',
-        template: __webpack_require__(215)
+        selector: 'app-define-scan-area',
+        template: __webpack_require__(217)
     }),
     __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], DefineScanAreaComponent);
@@ -364,7 +364,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 151:
+/***/ 153:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -445,7 +445,7 @@ var DefineVideoSizeAndStartPointComponent = (function () {
         this.sesVideoScannerService.scanAreaDisplayLeft = this.scanAreaDisplayLeft;
         this.sesVideoScannerService.scanAreaDisplayWidth = this.scanAreaDisplayWidth;
         this.sesVideoScannerService.scanAreaDisplayHeight = this.scanAreaDisplayHeight;
-        this.router.navigate(['/my-define-scan-area']);
+        this.router.navigate(['/app-define-scan-area']);
     };
     DefineVideoSizeAndStartPointComponent.prototype.saveVideoImage = function () {
         var context = this.canvasNode.nativeElement.getContext('2d');
@@ -481,8 +481,8 @@ __decorate([
 ], DefineVideoSizeAndStartPointComponent.prototype, "inputSlideVideoSize", void 0);
 DefineVideoSizeAndStartPointComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'my-define-video-size-and-start-point',
-        template: __webpack_require__(216)
+        selector: 'app-define-video-size-and-start-point',
+        template: __webpack_require__(218)
     }),
     __metadata("design:paramtypes", [typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _e || Object])
 ], DefineVideoSizeAndStartPointComponent);
@@ -492,7 +492,7 @@ var _a, _b, _c, _d, _e;
 
 /***/ }),
 
-/***/ 152:
+/***/ 154:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -501,7 +501,7 @@ var _a, _b, _c, _d, _e;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styles_css__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_styles_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_SESIncident__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_SESIncident__ = __webpack_require__(156);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DoScanComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -735,7 +735,7 @@ var DoScanComponent = (function () {
         this.showResultsButton = true;
     };
     DoScanComponent.prototype.nextStep = function () {
-        this.router.navigate(['/my-show-results']);
+        this.router.navigate(['/app-show-results']);
     };
     return DoScanComponent;
 }());
@@ -773,8 +773,8 @@ __decorate([
 ], DoScanComponent.prototype, "imgImageCurrentMinusTwo", void 0);
 DoScanComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'my-do-scan',
-        template: __webpack_require__(217)
+        selector: 'app-do-scan',
+        template: __webpack_require__(219)
     }),
     __metadata("design:paramtypes", [typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _j || Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _k || Object])
 ], DoScanComponent);
@@ -784,7 +784,7 @@ var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 
 /***/ }),
 
-/***/ 153:
+/***/ 155:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -818,7 +818,7 @@ var HeaderComponent = (function () {
         window.location.reload();
     };
     HeaderComponent.prototype.clickSettings = function () {
-        this.router.navigate(['/my-settings']);
+        this.router.navigate(['/app-settings']);
     };
     HeaderComponent.prototype.getBrowserCompatability = function () {
         if (this.sesVideoScannerService.browserCompatable) {
@@ -832,8 +832,8 @@ var HeaderComponent = (function () {
 }());
 HeaderComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'my-header',
-        template: __webpack_require__(218)
+        selector: 'app-header',
+        template: __webpack_require__(220)
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _b || Object])
 ], HeaderComponent);
@@ -843,7 +843,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 154:
+/***/ 156:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -865,7 +865,7 @@ var SESIncident = (function () {
 
 /***/ }),
 
-/***/ 155:
+/***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -887,19 +887,19 @@ var SESVideo = (function () {
 
 /***/ }),
 
-/***/ 156:
+/***/ 158:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_styles_css__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_styles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_styles_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__SESVideoScanner_service__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_SESVideo__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_SESVideo__ = __webpack_require__(157);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectVideoFilesComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -918,21 +918,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var SelectVideoFilesComponent = (function () {
-    function SelectVideoFilesComponent(sesVideoScannerService, router, http, jsonp) {
-        this.sesVideoScannerService = sesVideoScannerService;
+    function SelectVideoFilesComponent(s, router, http) {
+        var _this = this;
+        this.s = s;
         this.router = router;
         this.http = http;
-        this.jsonp = jsonp;
         this._fileNumber = 0;
         this._videoFiles = [];
         this.finishedLoading = false;
-        sesVideoScannerService.checkLastLogIn();
+        this.loggingIn = false;
+        if (!s.sesEmployee) {
+            var key = localStorage.getItem('keyString');
+            s.checkLastLogIn(key)
+                .subscribe(function (emp) {
+                s.sesEmployee = emp;
+                s.persistUserDetails(emp);
+                s.loggedIn = true;
+                _this.loggingIn = false;
+            }, function (err) {
+                s.loggedIn = false;
+                _this.loggingIn = false;
+                _this.errorDisplayText = err;
+            });
+        }
     }
     SelectVideoFilesComponent.prototype.getDisplayText = function () {
         if (!this.getBrowserCompatability()) {
             return 'This application is designed for the Chrome Browser only. Please change browser.';
         }
-        if (!this.sesVideoScannerService.loggedIn) {
+        if (!this.s.loggedIn) {
             return 'Please log in to use the SES Video Scanner';
         }
         if (this.filesLoaded()) {
@@ -953,7 +967,7 @@ var SelectVideoFilesComponent = (function () {
         var rv = false;
         switch (button) {
             case 'cancel':
-                if (this.filesLoaded() && this.sesVideoScannerService.loggedIn) {
+                if (this.filesLoaded() && this.s.loggedIn) {
                     rv = true;
                 }
                 else {
@@ -964,7 +978,7 @@ var SelectVideoFilesComponent = (function () {
                 if (this.filesLoaded()) {
                     rv = false;
                 }
-                else if (this.sesVideoScannerService.loggedIn) {
+                else if (this.s.loggedIn) {
                     rv = true;
                 }
                 else {
@@ -972,7 +986,7 @@ var SelectVideoFilesComponent = (function () {
                 }
                 break;
             case 'continue':
-                if (this.filesLoaded() && this.sesVideoScannerService.loggedIn && this.finishedLoading) {
+                if (this.filesLoaded() && this.s.loggedIn && this.finishedLoading) {
                     rv = true;
                 }
                 else {
@@ -980,7 +994,7 @@ var SelectVideoFilesComponent = (function () {
                 }
                 break;
             case 'login':
-                if (this.sesVideoScannerService.loggedIn) {
+                if (this.s.loggedIn) {
                     rv = false;
                 }
                 else {
@@ -997,34 +1011,31 @@ var SelectVideoFilesComponent = (function () {
         return (this._videoFiles.length > 0);
     };
     SelectVideoFilesComponent.prototype.nextStep = function () {
-        this.router.navigate(['/my-define-video-size-and-start-point']);
+        this.router.navigate(['/app-define-video-size-and-start-point']);
     };
     SelectVideoFilesComponent.prototype.logIn = function () {
         var _this = this;
-        var lURL = 'https://script.google.com/macros/s/AKfycbwKQQIa2brENe4j5tHIyee4IA9IChHqzP9znDJuGg7I6OHLDCE/exec';
-        var params = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* URLSearchParams */]();
-        params.set('login', this.inputPassword.nativeElement.value);
-        params.set('prefix', 'JSONP_CALLBACK');
-        this.jsonp.request(lURL, { search: params, method: 'Get' }).toPromise().
-            then(function (Res) { return _this.checkLoginResponse(Res); }).catch(function (Res) { return _this.handleHttpError(Res); });
+        var v = this.inputPassword.nativeElement.value;
+        var s = this.s;
+        if (!this.loggingIn && v) {
+            this.loggingIn = true;
+            s.callLogInService(v)
+                .subscribe(function (emp) {
+                s.sesEmployee = emp;
+                s.persistUserDetails(emp);
+                s.loggedIn = true;
+                _this.loggingIn = false;
+            }, function (err) {
+                s.loggedIn = false;
+                _this.loggingIn = false;
+                _this.errorDisplayText = err;
+            });
+        }
     };
     SelectVideoFilesComponent.prototype.checkForLogInEnter = function (e) {
         if (e === 13) {
             this.logIn();
         }
-    };
-    SelectVideoFilesComponent.prototype.checkLoginResponse = function (res) {
-        var s = res.json().authorized;
-        if (s === 'true') {
-            this.sesVideoScannerService.logIn();
-        }
-        else {
-            this.sesVideoScannerService.loggedIn = false;
-            this.errorDisplayText = 'Incorrect password - please try again';
-        }
-    };
-    SelectVideoFilesComponent.prototype.handleHttpError = function (error) {
-        this.errorDisplayText = 'Error attempting to access the login Service - please try again later';
     };
     SelectVideoFilesComponent.prototype.loadVideos = function () {
         if (this._videoFiles.length < this._fileNumber + 1) {
@@ -1044,14 +1055,14 @@ var SelectVideoFilesComponent = (function () {
             sesVideo.duration = this.videoNode.nativeElement.duration;
             sesVideo.fileURL = this._fileURL;
             sesVideo.fileName = this._fileName;
-            this.sesVideoScannerService.sesVideos.push(sesVideo);
+            this.s.sesVideos.push(sesVideo);
             this._videoLoading = '';
             this._fileNumber++;
             this.loadVideos();
         }
     };
     SelectVideoFilesComponent.prototype.getBrowserCompatability = function () {
-        if (this.sesVideoScannerService.browserCompatable) {
+        if (this.s.browserCompatable) {
             return true;
         }
         else {
@@ -1074,18 +1085,18 @@ __decorate([
 ], SelectVideoFilesComponent.prototype, "inputPassword", void 0);
 SelectVideoFilesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'my-select-video-files',
-        template: __webpack_require__(219),
+        selector: 'app-select-video-files',
+        template: __webpack_require__(221),
     }),
-    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* Http */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["e" /* Jsonp */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["e" /* Jsonp */]) === "function" && _f || Object])
+    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Http */]) === "function" && _e || Object])
 ], SelectVideoFilesComponent);
 
-var _a, _b, _c, _d, _e, _f;
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=selectVideoFiles.component.js.map
 
 /***/ }),
 
-/***/ 157:
+/***/ 159:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1118,8 +1129,8 @@ var SettingsComponent = (function () {
 }());
 SettingsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'my-settings',
-        template: __webpack_require__(220),
+        selector: 'app-settings',
+        template: __webpack_require__(222),
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _b || Object])
 ], SettingsComponent);
@@ -1129,12 +1140,12 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 158:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SESVideoScanner_service__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(17);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsFormComponent; });
@@ -1175,8 +1186,8 @@ var SettingsFormComponent = (function () {
 }());
 SettingsFormComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'my-settings-form',
-        template: __webpack_require__(221)
+        selector: 'app-settings-form',
+        template: __webpack_require__(223)
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], SettingsFormComponent);
@@ -1186,7 +1197,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 159:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1279,8 +1290,8 @@ __decorate([
 ], ShowResultsComponent.prototype, "playSlider", void 0);
 ShowResultsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'my-show-results',
-        template: __webpack_require__(222),
+        selector: 'app-show-results',
+        template: __webpack_require__(224),
         animations: [
             __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* trigger */])('selectedIncident', [
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* state */])('inactive', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* style */])({
@@ -1304,7 +1315,7 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 160:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1326,6 +1337,13 @@ var environment = {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SESVideoScannerService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1337,11 +1355,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
+
 var SESVideoScannerService = (function () {
-    function SESVideoScannerService() {
+    function SESVideoScannerService(http) {
+        this.http = http;
         this.sesVideos = [];
         this.loggedIn = false;
         this.browserCompatable = true; // must be Chrome - checked in header component.
+        this.baseUrl = 'http://www.video-scanner.com';
         if (localStorage.getItem('minIntervalBetweenIncidents') === null) {
             this.minIntervalBetweenIncidents = 5;
         }
@@ -1416,96 +1440,130 @@ var SESVideoScannerService = (function () {
     };
     SESVideoScannerService.prototype.getLogInStatusText = function () {
         if (this.loggedIn === true) {
-            return 'SES User logged in';
+            return this.sesEmployee.first_name + ' ' + this.sesEmployee.last_name + ' / ' +
+                this.sesEmployee.organisation_name;
         }
         else {
             return '';
         }
     };
-    SESVideoScannerService.prototype.logIn = function () {
-        this.loggedIn = true;
-        var d = new Date();
-        var s = (((d.getDay() + 3) * (d.getMonth() + 4) * (d.getFullYear()) + 5) - 666).toString();
-        localStorage.setItem('login', s);
+    SESVideoScannerService.prototype.persistUserDetails = function (e) {
+        this.sesEmployee = e;
+        localStorage.setItem('keyString', e.keyString);
     };
-    SESVideoScannerService.prototype.checkLastLogIn = function () {
-        var s = localStorage.getItem('login');
-        var n = parseInt(s, 10);
-        var d = new Date();
-        n = n + 666;
-        if (n === (d.getDay() + 3) * (d.getMonth() + 4) * (d.getFullYear()) + 5) {
-            // logged in today
-            this.loggedIn = true;
-        }
+    SESVideoScannerService.prototype.callLogInService = function (password) {
+        var _this = this;
+        return this.http
+            .get(this.baseUrl + '/auth/login/' + password)
+            .map(function (res) {
+            return _this.toSESEmployee(res);
+        })
+            .catch(function (e) {
+            if (e.status === 401) {
+                return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw('Password not recognised');
+            }
+            else {
+                return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw(e);
+            }
+        });
+    };
+    SESVideoScannerService.prototype.toSESEmployee = function (r) {
+        var j = r.json();
+        var sesEmployee = ({
+            employee_pk: j.employee_pk,
+            first_name: j.first_name,
+            last_name: j.last_name,
+            organisation_pk: j.organisation_pk,
+            organisation_name: j.organisation_name,
+            keyString: j.keyString
+        });
+        return sesEmployee;
+    };
+    SESVideoScannerService.prototype.checkLastLogIn = function (key) {
+        var _this = this;
+        return this.http
+            .get(this.baseUrl + '/auth/validate/' + key)
+            .map(function (res) {
+            return _this.toSESEmployee(res);
+        })
+            .catch(function (e) {
+            if (e.status === 401) {
+                return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw('');
+            }
+            else {
+                return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw(e);
+            }
+        });
     };
     return SESVideoScannerService;
 }());
 SESVideoScannerService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Injectable */])(),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === "function" && _a || Object])
 ], SESVideoScannerService);
 
+var _a;
 //# sourceMappingURL=SESVideoScanner.service.js.map
-
-/***/ }),
-
-/***/ 214:
-/***/ (function(module, exports) {
-
-module.exports = "<main>\r\n  <my-header></my-header>\r\n  <router-outlet></router-outlet>\r\n</main>\r\n"
-
-/***/ }),
-
-/***/ 215:
-/***/ (function(module, exports) {
-
-module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h2>\r\n                {{getText()}} <br /><br />\r\n            </h2>\r\n            <br />\r\n            <br />\r\n            <br />\r\n            <br />\r\n            <br />\r\n            <div><button (click)=\"nextStep()\">Next</button></div>\r\n            <br />\r\n            <br />\r\n            <br />\r\n            <br />\r\n            <div><input [(ngModel)]=\"sesVideoScannerService.scanIncrement\" style=\"width:90px\" #inputSlideScanIncrement type=\"range\" min=\"1\" max=\"3\" step=\"1\" (change)=\"changeSlide(inputSlideScanIncrement.value)\" /></div>\r\n            <br />\r\n            {{getScanIncrementText()}}\r\n        </div>\r\n        <div style=\"width: 100px\">\r\n        </div>\r\n        <div class=\"rightColumn\">\r\n            <div draggable=\"true\" (dragstart)=\"dragStart($event)\" (dragend)=\"dragEnd($event)\" style.width=\"{{scanAreaDisplayWidth}}px\" style.height=\"{{scanAreaDisplayHeight}}px\" style.top=\"{{scanAreaDisplayTop}}px\" style.left=\"{{scanAreaDisplayLeft}}px\" class=\"scanArea\"></div>\r\n            <div draggable=\"true\" (dragstart)=\"resizeDragStart($event)\" (dragend)=\"resizeDragEnd($event)\" style=\"width: 30px; height: 30px\" style.top=\"{{resizeHandleTop}}px\" style.left=\"{{resizeHandleLeft}}px\" class=\"resizeArea\"></div>\r\n            <div style.top=\"{{videoDisplayTop}}px\" style.left=\"{{videoDisplayLeft}}px\" class=\"videoDiv\">\r\n                <img #imgElement src=\"{{getImage()}}\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</main>"
 
 /***/ }),
 
 /***/ 216:
 /***/ (function(module, exports) {
 
-module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h2>\r\n               {{getText()}} <br /><br />\r\n            </h2>\r\n            <input style=\"width:400px\" #inputSlideVideoSize type=\"range\" min=\"100\" max=\"1100\" (change)=\"changeSlide(inputSlideVideoSize.value)\" />\r\n            <br/>\r\n            <br/>\r\n            <br/>\r\n            <br/>\r\n            <div><button (click)=\"nextStep()\">Next</button></div><br />\r\n            <div *ngIf=\"laterVideoExists()\"><button (click)=\"useNextVideo()\">Start at next video</button></div>\r\n            <br/>\r\n            <br/>\r\n          </div>\r\n        <div style =\"width: 100px\">\r\n        </div>\r\n        <div class=\"rightColumn\">\r\n            <div style.top=\"{{videoDisplayTop}}px\" style.left=\"{{videoDisplayLeft}}px\" class=\"videoDiv\">    \r\n                <video #videoNode (loadedmetadata)=\"videoLoaded()\" style.width.px={{videoDisplayWidth}} style.height.px={{videoDisplayHeight+75}} controls preload=\"auto\"></video>\r\n            </div>\r\n            \r\n        </div>\r\n    </div>\r\n    <div style.position=\"fixed\">\r\n        <canvas #canvasNode width=\"{{videoDisplayWidth}}\" height=\"{{videoDisplayHeight}}\"></canvas>\r\n    </div>\r\n</main>"
+module.exports = "<main>\r\n  <app-header></app-header>\r\n  <router-outlet></router-outlet>\r\n</main>\r\n"
 
 /***/ }),
 
 /***/ 217:
 /***/ (function(module, exports) {
 
-module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h2>\r\n                {{displayText}}\r\n            </h2>\r\n            <br />\r\n            <br />\r\n            <button *ngIf=\"showResultsButton==false\" (click)=\"stopScan()\">Stop Scan</button><br /><br />\r\n            <button *ngIf=\"showResultsButton==false && showCompareImages\" (click)=\"scanVideo()\">DEBUG MODE</button><br /><br />\r\n            <button *ngIf=\"showResultsButton\" (click)=\"nextStep()\">Show Results</button><br /><br />\r\n            <table>\r\n                <tr *ngFor=\"let item of getFiles()\">\r\n                    <td *ngIf=\"item?.scanned == false && item?.scanning == false\" > {{ item?.fileName }}</td>\r\n                    <td *ngIf=\"item?.scanned\"> {{ item?.fileName + \" - scanned, number of incidents: \" + item?.getIncidentCount()}}</td>  \r\n                    <td *ngIf=\"item?.scanning\"> {{ item?.fileName + \" - scanning, number of incidents: \" + item?.getIncidentCount() }}</td>  \r\n                                  \r\n                </tr>\r\n            </table>\r\n            <canvas hidden #canvas1></canvas>\r\n            <canvas hidden #canvas2></canvas>\r\n            <canvas hidden #canvas3></canvas>\r\n            <canvas hidden #canvasTime></canvas><br/>\r\n            <div [hidden]=\"!showCompareImages || showResultsButton\">\r\n                <img #imgImageCurrent /><br />%age Movement: &nbsp;{{percentageMovementImageCurrent}}<br />\r\n                <img #imgImageCurrentMinusOne /><br />%age Movement: &nbsp;{{percentageMovementImageCurrentMinusOne}}<br />\r\n                <img #imgCurrentMinusTwo /><br />%age Movement: &nbsp;{{percentageMovementImageCurrentMinusTwo}}\r\n            </div>\r\n        </div>\r\n        <div class=\"rightColumn\">\r\n            <div style.top=\"{{videoDisplayTop}}px\" style.left=\"{{videoDisplayLeft}}px\" class=\"videoDiv\">\r\n                <video #videoNode (loadedmetadata)=\"videoLoaded()\" style.width.px={{videoDisplayWidth}} style.height.px={{videoDisplayHeight}} preload=\"auto\"></video>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</main>"
+module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h2>\r\n                {{getText()}} <br /><br />\r\n            </h2>\r\n            <br />\r\n            <br />\r\n            <br />\r\n            <br />\r\n            <br />\r\n            <div><button (click)=\"nextStep()\">Next</button></div>\r\n            <br />\r\n            <br />\r\n            <br />\r\n            <br />\r\n            <div><input [(ngModel)]=\"sesVideoScannerService.scanIncrement\" style=\"width:90px\" #inputSlideScanIncrement type=\"range\" min=\"1\" max=\"3\" step=\"1\" (change)=\"changeSlide(inputSlideScanIncrement.value)\" /></div>\r\n            <br />\r\n            {{getScanIncrementText()}}\r\n        </div>\r\n        <div style=\"width: 100px\">\r\n        </div>\r\n        <div class=\"rightColumn\">\r\n            <div draggable=\"true\" (dragstart)=\"dragStart($event)\" (dragend)=\"dragEnd($event)\" style.width=\"{{scanAreaDisplayWidth}}px\" style.height=\"{{scanAreaDisplayHeight}}px\" style.top=\"{{scanAreaDisplayTop}}px\" style.left=\"{{scanAreaDisplayLeft}}px\" class=\"scanArea\"></div>\r\n            <div draggable=\"true\" (dragstart)=\"resizeDragStart($event)\" (dragend)=\"resizeDragEnd($event)\" style=\"width: 30px; height: 30px\" style.top=\"{{resizeHandleTop}}px\" style.left=\"{{resizeHandleLeft}}px\" class=\"resizeArea\"></div>\r\n            <div style.top=\"{{videoDisplayTop}}px\" style.left=\"{{videoDisplayLeft}}px\" class=\"videoDiv\">\r\n                <img #imgElement src=\"{{getImage()}}\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</main>"
 
 /***/ }),
 
 /***/ 218:
 /***/ (function(module, exports) {
 
-module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h1>{{title}}</h1>\r\n        </div>\r\n        <div class=\"rightColumn\" align=\"right\">\r\n                <table>\r\n                    <tr>\r\n                        <td>{{sesVideoScannerService.getLogInStatusText()}}</td>\r\n                        <td *ngIf=\"getBrowserCompatability()\" width=\"100\" valign=\"top\"><img width=\"80\" src=\"assets/img/home.jpg\" (click)=\"clickHome()\" /></td>\r\n                        <td *ngIf=\"getBrowserCompatability()\" valign=\"top\"><img width=\"69\" src=\"assets/img/cog.png\" (click)=\"clickSettings()\" /></td>\r\n                    </tr>\r\n                </table>\r\n        </div>\r\n    </div>\r\n</main>"
+module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h2>\r\n               {{getText()}} <br /><br />\r\n            </h2>\r\n            <input style=\"width:400px\" #inputSlideVideoSize type=\"range\" min=\"100\" max=\"1100\" (change)=\"changeSlide(inputSlideVideoSize.value)\" />\r\n            <br/>\r\n            <br/>\r\n            <br/>\r\n            <br/>\r\n            <div><button (click)=\"nextStep()\">Next</button></div><br />\r\n            <div *ngIf=\"laterVideoExists()\"><button (click)=\"useNextVideo()\">Start at next video</button></div>\r\n            <br/>\r\n            <br/>\r\n          </div>\r\n        <div style =\"width: 100px\">\r\n        </div>\r\n        <div class=\"rightColumn\">\r\n            <div style.top=\"{{videoDisplayTop}}px\" style.left=\"{{videoDisplayLeft}}px\" class=\"videoDiv\">    \r\n                <video #videoNode (loadedmetadata)=\"videoLoaded()\" style.width.px={{videoDisplayWidth}} style.height.px={{videoDisplayHeight+75}} controls preload=\"auto\"></video>\r\n            </div>\r\n            \r\n        </div>\r\n    </div>\r\n    <div style.position=\"fixed\">\r\n        <canvas #canvasNode width=\"{{videoDisplayWidth}}\" height=\"{{videoDisplayHeight}}\"></canvas>\r\n    </div>\r\n</main>"
 
 /***/ }),
 
 /***/ 219:
 /***/ (function(module, exports) {
 
-module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h2>\r\n                {{getDisplayText()}} <br /><br />\r\n                <input #fileInput  id=\"fileInputLocal\" type=\"file\" (change)=\"onFileInputChange()\" multiple accept=\"video/*\" style=\"visibility:hidden\" />\r\n            </h2>\r\n            <div *ngIf=\"getBrowserCompatability()\">\r\n                <div *ngIf=\"getButtonState('login')\">\r\n                    <input #inputPassword type=\"password\" maxlength=\"8\" size=\"12\" class=\"formInput\" (keypress)=\"checkForLogInEnter($event.keyCode)\" /><br /><br />\r\n                    <button (click)=\"logIn()\">Log In</button><br />\r\n                    <div class=\"userErrorWarning\"> {{errorDisplayText}} </div>\r\n                </div>\r\n                <div *ngIf=\"getButtonState('browseforfiles')\"><button onClick=\"document.getElementById('fileInputLocal').click()\">Browse for files</button></div>\r\n                <div *ngIf=\"getButtonState('continue')\"><button (click)=\"nextStep()\">Continue</button><br /><br /></div>\r\n                <div *ngIf=\"!finishedLoading\">  {{videoLoadStatusText}}<br /><br /></div>\r\n                <div *ngIf=\"getButtonState('cancel')\"><button onclick=\"location.reload()\">Cancel</button><br /><br /><br /><br /></div>\r\n                <div *ngIf=\"filesLoaded()\">\r\n                    <table>\r\n                        <tr *ngFor=\"let item of getFiles()\">\r\n                            <td><strong>{{ item?.name }}</strong></td>\r\n                        </tr>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"rightColumn\">\r\n            <div hidden>\r\n                <video #videoNode (loadedmetadata)=\"videoLoaded()\"></video>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</main>"
+module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h2>\r\n                {{displayText}}\r\n            </h2>\r\n            <br />\r\n            <br />\r\n            <button *ngIf=\"showResultsButton==false\" (click)=\"stopScan()\">Stop Scan</button><br /><br />\r\n            <button *ngIf=\"showResultsButton==false && showCompareImages\" (click)=\"scanVideo()\">DEBUG MODE</button><br /><br />\r\n            <button *ngIf=\"showResultsButton\" (click)=\"nextStep()\">Show Results</button><br /><br />\r\n            <table>\r\n                <tr *ngFor=\"let item of getFiles()\">\r\n                    <td *ngIf=\"item?.scanned == false && item?.scanning == false\" > {{ item?.fileName }}</td>\r\n                    <td *ngIf=\"item?.scanned\"> {{ item?.fileName + \" - scanned, number of incidents: \" + item?.getIncidentCount()}}</td>  \r\n                    <td *ngIf=\"item?.scanning\"> {{ item?.fileName + \" - scanning, number of incidents: \" + item?.getIncidentCount() }}</td>  \r\n                                  \r\n                </tr>\r\n            </table>\r\n            <canvas hidden #canvas1></canvas>\r\n            <canvas hidden #canvas2></canvas>\r\n            <canvas hidden #canvas3></canvas>\r\n            <canvas hidden #canvasTime></canvas><br/>\r\n            <div [hidden]=\"!showCompareImages || showResultsButton\">\r\n                <img #imgImageCurrent /><br />%age Movement: &nbsp;{{percentageMovementImageCurrent}}<br />\r\n                <img #imgImageCurrentMinusOne /><br />%age Movement: &nbsp;{{percentageMovementImageCurrentMinusOne}}<br />\r\n                <img #imgCurrentMinusTwo /><br />%age Movement: &nbsp;{{percentageMovementImageCurrentMinusTwo}}\r\n            </div>\r\n        </div>\r\n        <div class=\"rightColumn\">\r\n            <div style.top=\"{{videoDisplayTop}}px\" style.left=\"{{videoDisplayLeft}}px\" class=\"videoDiv\">\r\n                <video #videoNode (loadedmetadata)=\"videoLoaded()\" style.width.px={{videoDisplayWidth}} style.height.px={{videoDisplayHeight}} preload=\"auto\"></video>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</main>"
 
 /***/ }),
 
 /***/ 220:
 /***/ (function(module, exports) {
 
-module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h2>\r\n                {{displayText}}\r\n            </h2>\r\n        </div>\r\n        <div class=\"rightColumn\" align=\"left\">\r\n            <table>\r\n                <tr>\r\n                    <td width=\"100\"></td>\r\n                    <td>\r\n                        <my-settings-form></my-settings-form>\r\n                    </td>\r\n                </tr>\r\n            </table>\r\n        </div>\r\n    </div>\r\n</main>"
+module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h1>{{title}}</h1>\r\n        </div>\r\n        <div class=\"rightColumn\" align=\"right\">\r\n                <table>\r\n                    <tr>\r\n                        <td>{{sesVideoScannerService.getLogInStatusText()}}</td>\r\n                        <td *ngIf=\"getBrowserCompatability()\" width=\"100\" valign=\"top\"><img width=\"80\" src=\"assets/img/home.jpg\" (click)=\"clickHome()\" /></td>\r\n                        <td *ngIf=\"getBrowserCompatability()\" valign=\"top\"><img width=\"69\" src=\"assets/img/cog.png\" (click)=\"clickSettings()\" /></td>\r\n                    </tr>\r\n                </table>\r\n        </div>\r\n    </div>\r\n</main>"
 
 /***/ }),
 
 /***/ 221:
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n    <form [formGroup]=\"complexForm\" (ngSubmit)=\"submitSettingsForm(complexForm.value)\">\r\n        <div>\r\n            <label for=\"minIntervalBetweenIncidents\">Min Interval between Incidents (secs)</label>\r\n            <input type=\"text\" size=\"3\" maxlength=\"3\"\r\n                   required pattern=\"^([1-9][0-9]{0,2}|1000)$\"\r\n                   [formControl]=\"complexForm.controls['minIntervalBetweenIncidents']\" id=\"minIntervalBetweenIncidents\"\r\n                   [(ngModel)]=\"minIntervalBetweenIncidents\"\r\n                   /> \r\n        </div>\r\n        <div class=\"formError\" *ngIf=\"!complexForm.controls['minIntervalBetweenIncidents'].valid\">Must be a valid number</div>\r\n        <br/>\r\n\r\n        <div>\r\n            <label for=\"scanIterationTimer\">Wait time between scan iterations (milliseconds)</label>\r\n            <input type=\"text\" size=\"3\" maxlength=\"3\"\r\n                   required pattern=\"^([1-9][0-9][0-9])$\"\r\n                   [formControl]=\"complexForm.controls['scanIterationTimer']\" id=\"scanIterationTimer\"\r\n                   [(ngModel)]=\"scanIterationTimer\" />\r\n        </div>\r\n        <div class=\"formError\" *ngIf=\"!complexForm.controls['scanIterationTimer'].valid\">Must be a valid number greater than 100</div>\r\n        <br />\r\n\r\n        <div>\r\n            <label for=\"showCompareImages\">Debug Mode: &nbsp; &nbsp;</label>\r\n            False <input type=\"radio\" name=\"showCompareImages\" [formControl]=\"complexForm.controls['showCompareImages']\"\r\n                   id=\"showCompareImages\"\r\n                   [(ngModel)]=\"showCompareImages\" \r\n                   [value]=\"false\"/>\r\n\r\n            True <input type=\"radio\" name=\"showCompareImages\" [formControl]=\"complexForm.controls['showCompareImages']\"\r\n                   id=\"showCompareImages\"\r\n                   [(ngModel)]=\"showCompareImages\"\r\n                   [value]=\"true\" />\r\n        </div>\r\n        <br/>\r\n\r\n\r\n        <div><button type=\"submit\" [disabled]=\"!complexForm.valid\">Submit</button></div>\r\n    </form>\r\n</div>"
+module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h2>\r\n                {{getDisplayText()}} <br /><br />\r\n                <input #fileInput  id=\"fileInputLocal\" type=\"file\" (change)=\"onFileInputChange()\" multiple accept=\"video/*\" style=\"visibility:hidden\" />\r\n            </h2>\r\n            <div *ngIf=\"getBrowserCompatability()\">\r\n                <div *ngIf=\"getButtonState('login')\">\r\n                    <input #inputPassword type=\"password\" maxlength=\"8\" size=\"12\" class=\"formInput\" (keypress)=\"checkForLogInEnter($event.keyCode)\" /><br /><br />\r\n                    <button (click)=\"logIn()\">Log In</button><br />\r\n                    <div class=\"userErrorWarning\"> {{errorDisplayText}} </div>\r\n                </div>\r\n                <div *ngIf=\"getButtonState('browseforfiles')\"><button onClick=\"document.getElementById('fileInputLocal').click()\">Browse for files</button></div>\r\n                <div *ngIf=\"getButtonState('continue')\"><button (click)=\"nextStep()\">Continue</button><br /><br /></div>\r\n                <div *ngIf=\"!finishedLoading\">  {{videoLoadStatusText}}<br /><br /></div>\r\n                <div *ngIf=\"getButtonState('cancel')\"><button onclick=\"location.reload()\">Cancel</button><br /><br /><br /><br /></div>\r\n                <div *ngIf=\"filesLoaded()\">\r\n                    <table>\r\n                        <tr *ngFor=\"let item of getFiles()\">\r\n                            <td><strong>{{ item?.name }}</strong></td>\r\n                        </tr>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"rightColumn\">\r\n            <div hidden>\r\n                <video #videoNode (loadedmetadata)=\"videoLoaded()\"></video>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</main>"
 
 /***/ }),
 
 /***/ 222:
+/***/ (function(module, exports) {
+
+module.exports = "<main>\r\n    <div class=\"mother\">\r\n        <div class=\"leftColumn\">\r\n            <h2>\r\n                {{displayText}}\r\n            </h2>\r\n        </div>\r\n        <div class=\"rightColumn\" align=\"left\">\r\n            <table>\r\n                <tr>\r\n                    <td width=\"100\"></td>\r\n                    <td>\r\n                        <app-settings-form></app-settings-form>\r\n                    </td>\r\n                </tr>\r\n            </table>\r\n        </div>\r\n    </div>\r\n</main>"
+
+/***/ }),
+
+/***/ 223:
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n    <form [formGroup]=\"complexForm\" (ngSubmit)=\"submitSettingsForm(complexForm.value)\">\r\n        <div>\r\n            <label for=\"minIntervalBetweenIncidents\">Min Interval between Incidents (secs)</label>\r\n            <input type=\"text\" size=\"3\" maxlength=\"3\"\r\n                   required pattern=\"^([1-9][0-9]{0,2}|1000)$\"\r\n                   [formControl]=\"complexForm.controls['minIntervalBetweenIncidents']\" id=\"minIntervalBetweenIncidents\"\r\n                   [(ngModel)]=\"minIntervalBetweenIncidents\"\r\n                   /> \r\n        </div>\r\n        <div class=\"formError\" *ngIf=\"!complexForm.controls['minIntervalBetweenIncidents'].valid\">Must be a valid number</div>\r\n        <br/>\r\n\r\n        <div>\r\n            <label for=\"scanIterationTimer\">Wait time between scan iterations (milliseconds)</label>\r\n            <input type=\"text\" size=\"3\" maxlength=\"3\"\r\n                   required pattern=\"^([1-9][0-9][0-9])$\"\r\n                   [formControl]=\"complexForm.controls['scanIterationTimer']\" id=\"scanIterationTimer\"\r\n                   [(ngModel)]=\"scanIterationTimer\" />\r\n        </div>\r\n        <div class=\"formError\" *ngIf=\"!complexForm.controls['scanIterationTimer'].valid\">Must be a valid number greater than 100</div>\r\n        <br />\r\n\r\n        <div>\r\n            <label for=\"showCompareImages\">Debug Mode: &nbsp; &nbsp;</label>\r\n            False <input type=\"radio\" name=\"showCompareImages\" [formControl]=\"complexForm.controls['showCompareImages']\"\r\n                   id=\"showCompareImages\"\r\n                   [(ngModel)]=\"showCompareImages\" \r\n                   [value]=\"false\"/>\r\n\r\n            True <input type=\"radio\" name=\"showCompareImages\" [formControl]=\"complexForm.controls['showCompareImages']\"\r\n                   id=\"showCompareImages\"\r\n                   [(ngModel)]=\"showCompareImages\"\r\n                   [value]=\"true\" />\r\n        </div>\r\n        <br/>\r\n\r\n\r\n        <div><button type=\"submit\" [disabled]=\"!complexForm.valid\">Submit</button></div>\r\n    </form>\r\n</div>"
+
+/***/ }),
+
+/***/ 224:
 /***/ (function(module, exports) {
 
 module.exports = "    <main>\r\n        <div class=\"mother\">\r\n            <div class=\"leftColumn\">\r\n                <h2>\r\n                    {{displayText}} <br/>\r\n                    {{displayText2}}\r\n                    <br/><br/>\r\n                </h2>\r\n                <br />\r\n                <table>\r\n                    <tr *ngFor=\"let vid of allVideos\">\r\n                        <td>\r\n                        <table>\r\n                            <tr>\r\n                                <td (click)=\"showVideoAndPlay(vid?.fileName,0)\">{{vid?.fileName}}</td>\r\n                                <td *ngIf=\"vid?.fileName == currentlyPlayingVideoName\">:  -  Playing</td>\r\n                            </tr>\r\n                            <tr *ngFor=\"let inc of vid?.incidents\">\r\n                                <td (click)=\"showVideoAndPause(vid?.fileName,inc?.time)\" ><img src=\"{{inc?.imageTime}}\" /></td>\r\n                                <td><img width=\"22\" src=\"assets/img/play.png\" (click)=\"showVideoAndPlay(vid?.fileName,inc?.time)\"/></td>\r\n                            </tr>\r\n                        </table>\r\n                    </tr>\r\n                </table>\r\n            </div>\r\n            <div class=\"rightColumn\">\r\n                <div style.top=\"{{videoDisplayTop}}px\" style.left=\"{{videoDisplayLeft}}px\" class=\"videoDiv\">\r\n                    <video #videoNode (ended)=\"videoEnded()\" (loadedmetadata)=\"videoLoaded()\"   style.width.px={{videoDisplayWidth}} style.height.px={{videoDisplayHeight+75}} preload=\"auto\" controls></video>\r\n                    <br/>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </main>"
@@ -1515,15 +1573,15 @@ module.exports = "    <main>\r\n        <div class=\"mother\">\r\n            <d
 /***/ 487:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(143);
+module.exports = __webpack_require__(145);
 
 
 /***/ }),
 
-/***/ 77:
+/***/ 78:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(78)(false);
+exports = module.exports = __webpack_require__(79)(false);
 // imports
 
 
