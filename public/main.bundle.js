@@ -741,7 +741,27 @@ var DoScanComponent = (function () {
         this.showResultsButton = true;
     };
     DoScanComponent.prototype.nextStep = function () {
-        this.router.navigate(['/app-show-results']);
+        var _this = this;
+        var s = this.sesVideoScannerService;
+        var objVidArray = [];
+        var json;
+        //{"videos":[{"video_name": "VID001", "employee_pk": 3, "incident_count": 5}
+        for (var i = 0; i < s.sesVideos.length; i++) {
+            var vid = s.sesVideos[i];
+            var objVid = {
+                'video_name': vid.fileName,
+                'employee_pk': s.sesEmployee.employee_pk,
+                'incident_count': vid.getIncidentCount()
+            };
+            objVidArray[i] = objVid;
+        }
+        json = JSON.stringify({ videos: objVidArray });
+        s.callVideoPutService(json)
+            .subscribe(function () {
+            _this.router.navigate(['/app-show-results']);
+        }, function (err) {
+            console.log(err);
+        });
     };
     return DoScanComponent;
 }());
@@ -1105,7 +1125,7 @@ SelectVideoFilesComponent = __decorate([
         selector: 'app-select-video-files',
         template: __webpack_require__(226),
     }),
-    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__SESVideoScanner_service__["a" /* SESVideoScannerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__SESVideoScanner_service__["a" /* SESVideoScannerService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["d" /* Http */]) === "function" && _e || Object])
 ], SelectVideoFilesComponent);
 
 var _a, _b, _c, _d, _e;
@@ -1497,6 +1517,18 @@ var SESVideoScannerService = (function () {
         this.sesEmployee = e;
         localStorage.setItem('keyString', e.keyString);
     };
+    SESVideoScannerService.prototype.callVideoPutService = function (json) {
+        //PUT http://www.video-scanner.com/scan/videos/  
+        //-d '{"videos":[{"video_name": "VID001", "employee_pk": 3, "incident_count": 5}, 
+        //{"video_name": "VID002", "employee_pk": 3, "incident_count": 3}]}'
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/json', 'Accept': 'q=0.8;application/json;q=0.9' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* RequestOptions */]({ headers: headers });
+        return this.http
+            .put(this.baseUrl + '/scan/videos/', json, options)
+            .catch(function (e) {
+            return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw(e);
+        });
+    };
     SESVideoScannerService.prototype.callLogInService = function (password) {
         var _this = this;
         return this.http
@@ -1545,7 +1577,7 @@ var SESVideoScannerService = (function () {
 }());
 SESVideoScannerService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */]) === "function" && _a || Object])
 ], SESVideoScannerService);
 
 var _a;
