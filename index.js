@@ -16,7 +16,7 @@ var pool = mySql.createPool({
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use(cors());
+app.use(cors({origin: ['http://localhost:4200','http://localhost:5000']}));
 app.options('*', cors());
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
