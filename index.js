@@ -17,8 +17,7 @@ var pool = mySql.createPool({
 app.set('port', (process.env.PORT || 5000));
 
 // use it before all route definitions
-app.options('*', cors());
-app.use(cors({origin: ['http://localhost:4200','http://localhost:5000']}));
+app.options('*', cors({origin: ['http://localhost:4200','http://localhost:5000']}));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
